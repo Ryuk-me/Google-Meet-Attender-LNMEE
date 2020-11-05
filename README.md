@@ -100,7 +100,7 @@ Turn on BOT Before Sleeping so it can attend your class while your are asleep.
 
 ```sh
 
-This bot will only work with `B SEE A 2019 Batch` if you are not from this batch then do some changes in python file it should work for you as well.
+This bot will only work with `B SEE A 2019 Batch`</br>if you are not from this batch then do some changes in python file it should work for you as well.
 
 Turn Off two step verification if enabled.
 
@@ -114,9 +114,9 @@ Dont share these cookies with anyone.
 ---
 
 # DISCLAIMER
-This Bot is created for educational purpose only.
-You are using this BOT on your own risk.
-I will not take any responsibility if anything happens to you because of this bot.
+This Bot is created for educational purpose only.</br>
+You are using this BOT on your own risk.</br>
+I will not take any responsibility if anything happens to you because of this bot.</br>
 You are Agreeing to all this Conditions before dowloading or cloning this repository.
 
 
