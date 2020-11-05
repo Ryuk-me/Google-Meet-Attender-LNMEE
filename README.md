@@ -122,7 +122,8 @@ Dont share these cookies with anyone.
 <i>You are Agreeing to all this Conditions before dowloading or cloning this repository.</i>
 
 
-#### <i>“Education is the most powerful weapon which you can use to change the world.”</i><strong> ― Nelson Mandela</strong>
+#### <i>“Education is the most powerful weapon which you can use to change the world.”</i><strong> ― Nelson Mandela</strong></br>
+<i> Attend all classes <strong>sincerely</i>.
 
 
 
