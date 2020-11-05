@@ -11,7 +11,7 @@ $ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
 ---
 
 ## Installation
-Make sure your have python installed.</br>
+Make sure your have `python` installed.</br>
 ```sh
 $ pip install -r requirements.txt
 ```
