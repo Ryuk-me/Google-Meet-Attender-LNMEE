@@ -5,7 +5,7 @@ import time
 
 
 driver = webdriver.Chrome()
-driver.get('https://accounts.google.com/') #! Enter Your Credentials Here abd login
+driver.get('https://accounts.google.com/') #! Enter Your Credentials Here and login
 
 check_login = input("Have You Sucessfully Logged in ? (y for yes n for no) : ") #! Enter 'y' for yes 'n' for no
 

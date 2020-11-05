@@ -17,7 +17,7 @@ $ pip install -r requirements.txt
 ```
 #### Run command
 <i>To get Cookies</i>
-```sh 
+```sh
 python get_cookies.py
 ```
 
@@ -28,7 +28,7 @@ python main.py
 
 
 ---
-# How to get cookies 
+# How to get cookies
 ```sh
  after cloning the repo run `get_cookies.py`
  and login to your google account
@@ -66,7 +66,7 @@ If you havent created account on heroku create one.
 
 5. Click on reveal configs vars
 
-6. Add following vars one by one 
+6. Add following vars one by one
 
     KEY                       VALUES
     CHROMEDRIVER_PATH         /app/.chromedriver/bin/chromedriver
@@ -86,7 +86,7 @@ If you havent created account on heroku create one.
 10. Then go to resource option and turn on the bot.
 
 ```
-You can also watch this video of heroku deployment. 
+You can also watch this video of heroku deployment.
 
 [Heroku Deployment Video](https://www.youtube.com/watch?v=rfdNIOYGYVI) Skip to 11:00
 
@@ -122,7 +122,7 @@ Dont share these cookies with anyone.
 <i>This <strong>BOT</strong> is created for educational purposes only.</br></i>
 <i>The usage of this <strong>BOT</strong> is at the own risk of the User.</br></i>
 <i>The Creator shall not be held responsible for any  misconduct on your behalf.</br></i>
-<i>You are <strong>agreeing</strong> to all these <strong>conditions</strong> before dowloading or cloning this <strong>repository<strong>.</i>
+<i>You are <strong>agreeing</strong> to all these <strong>conditions</strong> before dowloading / cloning / forking this <strong>repository<strong>.</i>
 
 #### <i>“Education is the most powerful weapon which you can use to change the world.”</i><strong> ― Nelson Mandela</strong></br>
 <i> Attend all classes <strong>sincerely</i>.</br></br>
