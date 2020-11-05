@@ -21,7 +21,7 @@ $ pip install -r requirements.txt
 python get_cookies.py
 ```
 
-<i> To start BOT (It will Run bot on the localhost that we dont want.)</i>
+<i> To start BOT</i>
 ```sh
 python main.py
 ```
