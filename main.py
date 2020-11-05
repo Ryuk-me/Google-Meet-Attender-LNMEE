@@ -12,6 +12,7 @@ from time import sleep
 from selenium.common.exceptions import NoSuchElementException
 import pause
 import re
+import sys
 
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -62,7 +63,7 @@ email = "huehuehue@gmail.com"  #! Change with your gmail email
 password = "huehuehue"  #! Change with your gmail Password
 
 #! class CODE
-meetingcode = 'abc-defg-hij'  #! Replace with your meeting code
+meetingcode = 'abc-defa-hij'  #! Replace with your meeting code
 #? How to get meeting code ?
 #? https://meet.google.com/abc-defg-hij
 #? abc-defg-hij will be your meeting code
@@ -72,7 +73,12 @@ full_name_with_roll = "Eva Elfie 12545" #! Repalce With Your name and roll or an
 #? This message will be sent to chat.
 
 
-
+#! Checking meet code is valid or not
+if re.match("(^[a-z]{3}-)([a-z]{4}-)([a-z]{3}$)",meetingcode):
+    pass
+else:
+    print("Meet Code Not Valid")
+    sys.exit()
 #! #######################################
 
 def browser():
@@ -99,11 +105,15 @@ def browser():
 def login():
     driver.get('https://meet.google.com/')
     sleep(5)
-
-    cookies = pickle.load(open("google.pkl", "rb"))
-    for cookie in cookies:
-        driver.add_cookie(cookie)
-    sleep(5)
+    try:
+        cookies = pickle.load(open("google.pkl", "rb"))
+        for cookie in cookies:
+            driver.add_cookie(cookie)
+        sleep(5)
+    except:
+        print("\nError !!!!\nFirst run get_cookies.py")
+        driver.quit()
+        sys.exit()
 
 
 def meet_redirect():
@@ -319,6 +329,7 @@ if __name__ == "__main__":
         pause.until(pause.until(datetime(*extended_pause)))
     else:
         print('I wont Run Today HueHueHue 😈')
+        
         extended_pause = list(map(int, extended_pause.split()))
         print(
             f"Extended Till [{extended_pause[-3]:02}:{extended_pause[-2]:02}:{extended_pause[-1]:02}]...")
