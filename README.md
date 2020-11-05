@@ -90,7 +90,7 @@ You can also watch this video of heroku deployment.
 
 ---
 
-# Some Peru Tips
+# Tips
 ```sh
 Turn off BOT after class is completed (to save heroku dyno hours).
 Turn on BOT Before Sleeping so it can attend your class while your are asleep.
