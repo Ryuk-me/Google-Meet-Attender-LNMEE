@@ -106,7 +106,7 @@ def login():
     driver.get('https://meet.google.com/')
     sleep(5)
     try:
-        cookies = pickle.load(open("google.pkl", "rb"))
+        cookies = pickle.load(open("lnme.pkl", "rb"))
         for cookie in cookies:
             driver.add_cookie(cookie)
         sleep(5)
@@ -329,7 +329,7 @@ if __name__ == "__main__":
         pause.until(pause.until(datetime(*extended_pause)))
     else:
         print('I wont Run Today HueHueHue 😈')
-        
+
         extended_pause = list(map(int, extended_pause.split()))
         print(
             f"Extended Till [{extended_pause[-3]:02}:{extended_pause[-2]:02}:{extended_pause[-1]:02}]...")
