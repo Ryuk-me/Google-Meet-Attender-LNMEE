@@ -15,3 +15,17 @@ Dont share these cookies with anyone.
 
 ```
 ---
+
+# Clone the repo
+
+$ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
+
+---
+
+## Installation
+Make sure your have python installed.</br>
+$ pip install -r requirements.txt
+
+---
+
+
