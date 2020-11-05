@@ -4,6 +4,8 @@
 ---
 
 ### Clone this repo
+If git is not installed then install git from here [Click here to Download](https://git-scm.com/downloads) then run below command.
+
 ```sh
 $ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
 
