@@ -89,9 +89,14 @@ If you havent created account on heroku create one.
 10. Then go to resource option and turn on the bot.
 
 ```
-You can also watch this video of heroku deployment.
 
-[Heroku Deployment Video](https://www.youtube.com/watch?v=rfdNIOYGYVI) Skip to 11:00
+---
+
+### Video of heroku Deployment.
+
+You can also watch this video of heroku deployment By [Nitin Shivam](https://github.com/nitinshivam).
+
+`[Heroku Deployment Video](https://youtu.be/FQf0g-jqHlA)`
 
 ---
 
