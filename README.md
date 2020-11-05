@@ -16,7 +16,11 @@ Make sure your have python installed.</br>
 $ pip install -r requirements.txt
 ```
 #### Run command
-```sh python get_cookies.py ``` <i>To get Cookies<i>
+```sh 
+python get_cookies.py
+```
+<i>To get Cookies</i>
+
 ---
 
 # SOME IMPORTANT NOTES
