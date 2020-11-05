@@ -10,8 +10,8 @@ $ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
 ```
 ---
 
-## Installation
-Make sure your have `python` installed.</br>
+## Installation for localhost
+Make sure your have `python3` installed.</br>
 ```sh
 $ pip install -r requirements.txt
 ```
@@ -27,6 +27,14 @@ python main.py
 <i> To start BOT (It will Run bot on the localhost that we dont want.)</i>
 
 ---
+# How to get cookies 
+```sh
+  after cloning the repo run `get_cookies.py`
+  and login to your google account
+```
+
+---
+
 # How to Deploy it on Heroku
 
 > Why do we need it to deploy on heroku ?
@@ -44,6 +52,7 @@ If you havent created account on heroku create one.
 #### So Coming to the main point How to deploy it on heroku
 
 ```sh
+0. First of all get your cookies.
 1. go to heroku and create a new app and enter a unique name for your app.
 2. Choose region united states.
 3. Now go to settings.
@@ -71,14 +80,28 @@ If you havent created account on heroku create one.
     $ git commit -am "make it better"
     $ git push heroku master
 
-
+10. Then go to resource option and turn on the bot.
 
 ```
+You can also watch this video of heroku deployment. 
+
+[Heroku Deployment Video](https://www.youtube.com/watch?v=rfdNIOYGYVI) Skip to 11:00
 
 ---
 
-# SOME IMPORTANT NOTES
+# Some Peru Tips
 ```sh
+Turn off BOT after class is completed (to save heroku dyno hours).
+Turn on BOT Before Sleeping so it can attend your class while your are asleep.
+```
+---
+
+# SOME IMPORTANT NOTES
+
+```sh
+
+This bot will only work with `B SEE A 2019 Batch` if you are not from this batch then do some changes in python file it should work for you as well.
+
 Turn Off two step verification if enabled.
 
 Dont use your primary gmail account.
@@ -90,5 +113,14 @@ Dont share these cookies with anyone.
 ```
 ---
 
+# DISCLAIMER
+This Bot is created for educational purpose only.
+You are using this BOT on your own risk.
+I will not take any responsibility if anything happens to you because of this bot.
+You are Agreeing to all this Conditions before dowloading or cloning this repository.
 
 
+
+#### License
+
+MIT © [Neeraj Kumar](https://github.com/Ryuk-me)
