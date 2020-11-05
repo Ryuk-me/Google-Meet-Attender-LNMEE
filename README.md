@@ -23,7 +23,7 @@ $ pip install -r requirements.txt
 python get_cookies.py
 ```
 
-<i> To start BOT</i>
+<i> To start BOT</i> Only use this command if you intend to use it on localhost.
 ```sh
 python main.py
 ```
