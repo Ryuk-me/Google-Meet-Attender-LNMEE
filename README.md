@@ -21,6 +21,60 @@ python get_cookies.py
 ```
 <i>To get Cookies</i>
 
+```sh
+python main.py
+```
+<i> To start BOT (It will Run bot on the localhost that we dont want.)</i>
+
+---
+# How to Deploy it on Heroku
+
+> Why do we need it to deploy on heroku ?
+
+```sh
+1. If we run it on localhost we have to always manually start it.(And if we do that then why we should call it a BOT)
+2. It will consume our cpu usage, data usage and our time.
+
+```
+> Why we use heroku ?
+
+Heroku provides free server hosting and 500hrs a month usage which will be more than enough for us.
+If you havent created account on heroku create one.
+
+#### So Coming to the main point How to deploy it on heroku
+
+```sh
+1. go to heroku and create a new app and enter a unique name for your app.
+2. Choose region united states.
+3. Now go to settings.
+4. Click on add buildpack and add the following one by one and save changes.
+  $ python
+  $ https://github.com/heroku/heroku-buildpack-google-chrome
+  $ https://github.com/heroku/heroku-buildpack-chromedriver
+
+5. Click on reveal configs vars
+
+6. Add following vars one by one 
+
+    KEY                       VALUES
+    CHROMEDRIVER_PATH         /app/.chromedriver/bin/chromedriver
+    GOOGLE_CHROME_BIN         /app/.apt/usr/bin/google-chrome
+    TZ                        Asia/Kolkata
+
+7. Now go to Deploy Option Heroku.
+8. Install heroku CLI and enter following commands one by one.
+    $ heroku login
+9. Open command prompt or any terminal in your current directory where all files are located.
+    $ git init
+    $ heroku git:remote -a your-app-name
+    $ git add .
+    $ git commit -am "make it better"
+    $ git push heroku master
+
+
+
+```
+
 ---
 
 # SOME IMPORTANT NOTES
