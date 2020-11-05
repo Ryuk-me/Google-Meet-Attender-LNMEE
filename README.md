@@ -110,8 +110,6 @@ Turn Off two step verification if enabled in your gmail account.
 
 Dont use your primary gmail account.
 
-For any reason if your google account gets banned i will not be held responsible.
-
 First run get_cookie.py and get your gmail account cookies. ( NECESSARY i repeat it is NECESSARY )
 
 Dont share these cookies with anyone.
@@ -124,7 +122,7 @@ Dont share these cookies with anyone.
 <i>This <strong>BOT</strong> is created for educational purposes only.</br></i>
 <i>The usage of this <strong>BOT</strong> is at the own risk of the User.</br></i>
 <i>The Creator shall not be held responsible for any  misconduct on your behalf.</br></i>
-<i>If by any chance your google account gets <strong>banned</strong> or <strong>suspended<strong> the creator shall not be accountable.</i>
+<i>If by any chance your google account gets <strong>banned</strong> or <strong>suspended<strong> the creator shall not be accountable.</i></br>
 <i>You are <strong>agreeing</strong> to all these <strong>conditions</strong> before downloading / cloning / forking this <strong>repository<strong>.</i>
 
 #### <i>“Education is the most powerful weapon which you can use to change the world.”</i><strong> ― Nelson Mandela</strong></br>
