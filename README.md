@@ -47,7 +47,7 @@ python main.py
 ```
 > Why we use heroku ?
 
-Heroku provides free server hosting and 500hrs a month usage which will be more than enough for us.
+Heroku provides free server hosting and 500hrs monthly usage which will be more than enough for us.
 If you havent created account on heroku create one.
 
 #### So Coming to the main point How to deploy it on heroku
