@@ -41,7 +41,7 @@ python main.py
 > Why do we need it to deploy on heroku ?
 
 ```sh
-1. If we run it on localhost we have to always manually start it.(And if we do that then why we should call it a BOT)
+1. If we run it on localhost we have to always manually start it.</br>(And if we do that then why we should call it a BOT)</br>
 2. It will consume our cpu usage, data usage and our time.
 
 ```
