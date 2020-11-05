@@ -34,8 +34,17 @@ import sys
 
 #!####### TIME #########################
 now = datetime.now()
+current_hour = int(now.strftime("%H"))
+
+
+if current_hour >= 12 and current_hour < 24:
+    time_sleep = 28 - current_hour
+    print(f"Sleeping for {time_sleep} hours.")
+    sleep(time_sleep*3600)
+
 
 # ! Change  to your meeting start time format must be same.
+now = datetime.now()
 startTime = f'{now.year} {now.month} {now.day} 09 11 00'
 
 #! Chnage it to meeting end time format must be same.
@@ -43,6 +52,7 @@ endTime = f'{now.year} {now.month} {now.day} 10 00 00'
 
 #! Dont change it
 day_name = now.strftime("%A")
+
 
 #! If your saturday timing is different or same  then change it here format must be same.
 saturday_startTime = f'{now.year} {now.month} {now.day} 07 35 00'
@@ -74,6 +84,9 @@ else:
     print("Meet Code Not Valid")
     sys.exit()
 #! #######################################
+
+
+
 
 def browser():
     #! Dont change anything
