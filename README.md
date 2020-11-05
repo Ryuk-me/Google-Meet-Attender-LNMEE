@@ -17,9 +17,10 @@ Dont share these cookies with anyone.
 ---
 
 # Clone the repo
-
+```sh
 $ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
 
+```
 ---
 
 ## Installation
