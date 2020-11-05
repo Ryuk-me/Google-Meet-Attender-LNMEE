@@ -4,7 +4,7 @@
 ---
 
 ### Clone this repo
-If git is not installed then install git from here [Click here to Download](https://git-scm.com/downloads) then run below command.
+If git is not installed then install git from here [Click here to Download Git](https://git-scm.com/downloads) then run below command.
 
 ```sh
 $ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
@@ -36,6 +36,22 @@ python main.py
  and login to your google account
 ```
 
+---
+
+# How to change meeting Code
+
+> How to find my google meet code ?
+```sh
+https://meet.google.com/abc-defg-hij
+abc-defg-hij <-- it is your meeting code.
+```
+> How to change meet code ?
+
+```sh
+1. Download any code editor i prefer vscode.
+2. Open main.py with vscode or any other editor or you can use notepad.
+3. Go to line 70 and replace meet code with your meet code and save.
+```
 ---
 
 # How to Deploy it on Heroku
