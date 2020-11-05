@@ -117,11 +117,10 @@ Dont share these cookies with anyone.
 
 # DISCLAIMER
 
-<i>This <strong>BOT</strong> is created for educational purpose only.</br></i>
-<i>You are using this <strong>BOT</strong> at your own risk.</br></i>
-<i>I will not take any responsibility if anything happens to you because of this <strong>BOT</strong>.</br></i>
-<i>You are Agreeing to all this Conditions before dowloading or cloning this repository.</i>
-
+<i>This <strong>BOT</strong> is created for educational purposes only.</br></i>
+<i>The usage of this <strong>BOT</strong> is at the own risk of the User.</br></i>
+<i>The Creator shall not be held responsible for any  misconduct on your behalf.</br></i>
+<i>You are <strong>agreeing</strong> to all these <strong>conditions<strong> before dowloading or cloning this <strong>repository<strong>.</i>
 
 #### <i>“Education is the most powerful weapon which you can use to change the world.”</i><strong> ― Nelson Mandela</strong></br>
 <i> Attend all classes <strong>sincerely</i>.</br></br>
