@@ -16,10 +16,11 @@ Make sure your have `python3` installed.</br>
 $ pip install -r requirements.txt
 ```
 #### Run command
+<i>To get Cookies</i>
 ```sh 
 python get_cookies.py
 ```
-<i>To get Cookies</i>
+
 
 ```sh
 python main.py
