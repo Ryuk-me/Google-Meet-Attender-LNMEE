@@ -129,6 +129,6 @@ Dont share these cookies with anyone.
 <i> Attend all classes <strong>sincerely</i>.</br></br>
 
 
-#### License
+#### Licence
 
 MIT © [Neeraj Kumar](https://github.com/Ryuk-me)
