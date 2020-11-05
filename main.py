@@ -56,14 +56,8 @@ extended_pause = f'{now.year} {now.month} {now.day} 23 59 59'
 
 #! USER DETAILS ##########################
 
-#! email
-email = "huehuehue@gmail.com"  #! Change with your gmail email
-
-#! passwword
-password = "huehuehue"  #! Change with your gmail Password
-
 #! class CODE
-meetingcode = 'abc-defa-hij'  #! Replace with your meeting code
+meetingcode = 'abc-defg-hij'  # ! Replace with your meeting code
 #? How to get meeting code ?
 #? https://meet.google.com/abc-defg-hij
 #? abc-defg-hij will be your meeting code
