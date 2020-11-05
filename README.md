@@ -106,9 +106,11 @@ Turn on BOT Before Sleeping so it can attend your class while your are asleep.
 This bot will only work with `B SEE A 2019 Batccch`
 if you are not from this batccch then do some changes in python file it should work for you as well.
 
-Turn Off two step verification if enabled.
+Turn Off two step verification if enabled in your gmail account.
 
 Dont use your primary gmail account.
+
+For any reason if your google account gets banned i will not be held responsible.
 
 First run get_cookie.py and get your gmail account cookies. ( NECESSARY i repeat it is NECESSARY )
 
