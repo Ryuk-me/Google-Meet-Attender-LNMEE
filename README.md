@@ -29,8 +29,8 @@ python main.py
 ---
 # How to get cookies 
 ```sh
-  after cloning the repo run `get_cookies.py`
-  and login to your google account
+ after cloning the repo run `get_cookies.py`
+ and login to your google account
 ```
 
 ---
@@ -115,10 +115,10 @@ Dont share these cookies with anyone.
 ---
 
 # DISCLAIMER
-This Bot is created for educational purpose only.</br>
-You are using this BOT on your own risk.</br>
-I will not take any responsibility if anything happens to you because of this bot.</br>
-You are Agreeing to all this Conditions before dowloading or cloning this repository.
+<i>This Bot is created for educational purpose only.</br></i>
+<i>You are using this BOT on your own risk.</br></i>
+<i>I will not take any responsibility if anything happens to you because of this bot.</br></i>
+<i>You are Agreeing to all this Conditions before dowloading or cloning this repository.</i>
 
 
 
