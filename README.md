@@ -115,9 +115,9 @@ Dont share these cookies with anyone.
 ---
 
 # DISCLAIMER
-<i>This <strong>BOT<strong> is created for educational purpose only.</br></i>
-<i>You are using this <strong>BOT<strong> on your own risk.</br></i>
-<i>I will not take any responsibility if anything happens to you because of this <strong>BOT<strong>.</br></i>
+<i>This <strong>BOT</strong> is created for educational purpose only.</br></i>
+<i>You are using this <strong>BOT</strong> on your own risk.</br></i>
+<i>I will not take any responsibility if anything happens to you because of this <strong>BOT</strong>.</br></i>
 <i>You are Agreeing to all this Conditions before dowloading or cloning this repository.</i>
 
 
