@@ -123,8 +123,7 @@ Dont share these cookies with anyone.
 
 
 #### <i>“Education is the most powerful weapon which you can use to change the world.”</i><strong> ― Nelson Mandela</strong></br>
-<i> Attend all classes <strong>sincerely</i>.
-
+<i> Attend all classes <strong>sincerely</i>.</br></br>
 
 
 #### License
