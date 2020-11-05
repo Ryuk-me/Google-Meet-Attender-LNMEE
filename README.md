@@ -92,7 +92,7 @@ If you havent created account on heroku create one.
 
 ---
 
-### Video of heroku Deployment.
+### Video Tutorial of deployment of BOT.
 
 You can also watch this video of heroku deployment By [Nitin Shivam](https://github.com/nitinshivam).
 
