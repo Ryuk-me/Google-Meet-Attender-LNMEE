@@ -3,7 +3,7 @@
 > This BOT will attend your online google meet classes on your behalf.
 ---
 
-# Clone this repo
+### Clone this repo
 ```sh
 $ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
 
@@ -11,7 +11,7 @@ $ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
 ---
 
 ## Installation for localhost
-Make sure your have `python3` installed.</br>
+Make sure your have `python3` and chrome browser installed.</br>
 ```sh
 $ pip install -r requirements.txt
 ```
