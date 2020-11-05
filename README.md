@@ -103,8 +103,8 @@ Turn on BOT Before Sleeping so it can attend your class while your are asleep.
 
 ```sh
 
-This bot will only work with `B SEE A 2019 Batch`
-if you are not from this batch then do some changes in python file it should work for you as well.
+This bot will only work with `B SEE A 2019 Batccch`
+if you are not from this batccch then do some changes in python file it should work for you as well.
 
 Turn Off two step verification if enabled.
 
