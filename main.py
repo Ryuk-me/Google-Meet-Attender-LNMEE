@@ -60,7 +60,6 @@ saturday_startTime = f'{now.year} {now.month} {now.day} 07 31 00'
 #! Dont change it is just a precaution for heroku deployment.
 extended_pause = f'{now.year} {now.month} {now.day} 23 59 59'
 
-
 #!#######################################
 
 
