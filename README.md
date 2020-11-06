@@ -53,7 +53,7 @@ abc-defg-hij <-- it is your meeting code.
 3. Go to line 69 and replace meet code with your meet code and save.
 ```
 ---
-# How to set my name and roll to send it o chat.
+### How to set my name and roll to send it to chat.
 
 ```bash
 Go to line 75
