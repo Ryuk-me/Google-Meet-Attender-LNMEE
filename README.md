@@ -4,6 +4,8 @@
 ---
 
 ### Clone this repo
+If git is not installed then install git from here [Click here to Download Git](https://git-scm.com/downloads) then run below command.
+
 ```sh
 $ git clone https://github.com/Ryuk-me/Google-Meet-Attender-LNMEE
 
@@ -21,7 +23,7 @@ $ pip install -r requirements.txt
 python get_cookies.py
 ```
 
-<i> To start BOT</i>
+<i> To start BOT</i> Only use this command if you intend to use it on localhost.
 ```sh
 python main.py
 ```
@@ -34,6 +36,22 @@ python main.py
  and login to your google account
 ```
 
+---
+
+# How to change meet code
+
+> How to find my google meet code ?
+```sh
+https://meet.google.com/abc-defg-hij
+abc-defg-hij <-- it is your meeting code.
+```
+> How to change meet code ?
+
+```sh
+1. Download any code editor i prefer vscode.
+2. Open main.py with vscode or any other editor or you can use notepad.
+3. Go to line 70 and replace meet code with your meet code and save.
+```
 ---
 
 # How to Deploy it on Heroku
@@ -75,6 +93,7 @@ If you havent created account on heroku create one.
 
 7. Now go to Deploy Option Heroku.
 8. Install heroku CLI and enter following commands one by one.
+    $ git checkout -b master
     $ heroku login
 9. Open command prompt or any terminal in your current directory where all files are located.
     $ git init
@@ -86,9 +105,14 @@ If you havent created account on heroku create one.
 10. Then go to resource option and turn on the bot.
 
 ```
-You can also watch this video of heroku deployment.
 
-[Heroku Deployment Video](https://www.youtube.com/watch?v=rfdNIOYGYVI) Skip to 11:00
+---
+
+### Video Tutorial of deployment of BOT.
+
+You can also watch this video of heroku deployment By [Nitin Shivam](https://github.com/nitinshivam).
+
+[Heroku Deployment Video](https://youtu.be/FQf0g-jqHlA)
 
 ---
 
@@ -128,7 +152,15 @@ Dont share these cookies with anyone.
 #### <i>“Education is the most powerful weapon which you can use to change the world.”</i><strong> ― Nelson Mandela</strong></br>
 <i> Attend all classes <strong>sincerely</i>.</br></br>
 
+---
+---
 
-#### License
+### © Credits
+<i><strong>[Nitin Shivam](https://github.com/nitinshivam)</strong> for video tutorial.</i></br>
+<i><strong>[Mrinal Raj](https://www.instagram.com/mrinal_raj15)</strong> for helping with Readme.</i></br>
+
+---
+
+#### Licence
 
 MIT © [Neeraj Kumar](https://github.com/Ryuk-me)
