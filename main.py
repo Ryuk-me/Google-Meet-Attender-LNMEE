@@ -223,7 +223,7 @@ def check_exists_by_xpath(xpath):
 
 
 if __name__ == "__main__":
-    if(day_name != 'Saturday' or day_name != 'Sunday'):
+    if(day_name != 'Saturday' and day_name != 'Sunday'):
         driver = browser()
         wait = webdriver.support.ui.WebDriverWait(driver, 5)
         driver.execute_script("document.body.style.zoom='50%'")
@@ -289,7 +289,7 @@ if __name__ == "__main__":
         endTime = list(map(int, endTime.split()))
         extended_pause = list(map(int, extended_pause.split()))
         print(
-            f"Waiting until Meet start time [{startTime[-3]:02}:{startTime[-2]:02}:{startTime[-1]:02}]...")
+            f"Waiting until Meet start time [{saturday_startTime[-3]:02}:{saturday_startTime[-2]:02}:{saturday_startTime[-1]:02}]...")
         pause.until(datetime(*saturday_startTime))
         login()
         try:
