@@ -118,7 +118,8 @@ You can also watch this video of heroku deployment By [Nitin Shivam](https://git
 
 # Tips
 ```sh
-Turn off BOT after class is completed (to save heroku dyno hours).
+Turn off BOT after class is completed / when you are awake.(to save heroku dyno hours).
+
 Turn on BOT Before Sleeping so it can attend your class while your are asleep.
 ```
 ---
