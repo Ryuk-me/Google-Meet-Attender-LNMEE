@@ -55,7 +55,7 @@ day_name = now.strftime("%A")
 
 
 #! If your saturday timing is different or same  then change it here format must be same.
-saturday_startTime = f'{now.year} {now.month} {now.day} 07 35 00'
+saturday_startTime = f'{now.year} {now.month} {now.day} 07 31 00'
 
 #! Dont change it is just a precaution for heroku deployment.
 extended_pause = f'{now.year} {now.month} {now.day} 23 59 59'
