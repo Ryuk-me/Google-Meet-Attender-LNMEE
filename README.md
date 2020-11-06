@@ -1,6 +1,6 @@
 # Google-Meet-Attender-LNMEE
 
-> This BOT will attend your online google meet classes on your behalf.
+> This BOT will attend your online google meet classes on your behalf.(specific for `LNMEE`)
 ---
 
 ### Clone this repo
@@ -121,6 +121,9 @@ You can also watch this video of heroku deployment By [Nitin Shivam](https://git
 Turn off BOT after class is completed / when you are awake.(to save heroku dyno hours).
 
 Turn on BOT Before Sleeping so it can attend your class while your are asleep.
+
+If you have turned off BOT after class is completed then only turn it on after 12PM.
+(If you turn on it before 12PM it will again start your meeting so be careful.) 
 ```
 ---
 
