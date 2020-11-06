@@ -73,7 +73,7 @@ meetingcode = 'abc-defg-hij'  # ! Replace with your meeting code
 #? abc-defg-hij will be your meeting code
 
 #! Chat message
-full_name_with_roll = "Eva Elfie 12545" #! Repalce With Your name and roll or anything you want
+full_name_with_roll = "Arnab Swami 196175" #! Repalce With Your name and roll or anything you want
 #? This message will be sent to chat.
 
 
@@ -292,14 +292,15 @@ if __name__ == "__main__":
         print(
             f"Waiting until Meet start time [{startTime[-3]:02}:{startTime[-2]:02}:{startTime[-1]:02}]...")
         pause.until(datetime(*saturday_startTime))
+        login()
         try:
             meet_redirect()
             while(check_exists_by_css("[aria-label='Chat with everyone']") != True):
                 meet_redirect()
             send_roll()
             driver.execute_script("document.body.style.zoom='80%'")
-            for i in range(30):
-                if(datetime.now().strftime("%H:%M:%S") < '09:54:00'):
+            for _ in range(100):
+                if(datetime.now().strftime("%H:%M:%S") < '09:55:00'):
                     send_roll_direct()
                     sleep(180)
                 else:
