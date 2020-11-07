@@ -122,7 +122,7 @@ If you havent created account on heroku create one.
 
 You can also watch this video of heroku deployment By [Nitin Shivam](https://github.com/nitinshivam).
 
-[Heroku Deployment Video](https://youtu.be/FQf0g-jqHlA)
+[Heroku Deployment Video](https://youtu.be/ahccu29B9GI)
 
 ---
 
