@@ -30,13 +30,6 @@ python main.py
 
 
 ---
-# How to get cookies
-```sh
- after cloning the repo run `get_cookies.py`
- and login to your google account
-```
-
----
 
 # How to change meet code
 
