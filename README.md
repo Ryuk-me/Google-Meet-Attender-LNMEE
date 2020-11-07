@@ -76,38 +76,41 @@ If you havent created account on heroku create one.
 #### So Coming to the main point How to deploy it on heroku
 
 ```sh
-0. First of all get your cookies.
-1. go to heroku and create a new app and enter a unique name for your app.
-2. Choose region united states.
-3. Now go to settings.
-4. Click on add buildpack and add the following one by one and save changes.
+0. Clone the repo.
+1. Install requirements `$ pip install -r requirements.txt`.
+2. Run command `$ python get_cookies.py` and login to your google account.
+3. Now set your meet code and your name and roll. 
+5. go to heroku and create a new app and enter a unique name for your app.
+6. Choose region united states.
+7. Now go to settings.
+8. Click on add buildpack and add the following one by one and save changes.
   $ python
   $ https://github.com/heroku/heroku-buildpack-google-chrome
   $ https://github.com/heroku/heroku-buildpack-chromedriver
 
-5. Click on reveal configs vars
+9. Click on reveal configs vars
 
-6. Add following vars one by one
+10. Add following vars one by one
 
     KEY                       VALUES
     CHROMEDRIVER_PATH         /app/.chromedriver/bin/chromedriver
     GOOGLE_CHROME_BIN         /app/.apt/usr/bin/google-chrome
     TZ                        Asia/Kolkata
 
-7. Now go to Deploy Option Heroku.
-8. Install heroku CLI and enter following commands one by one. 
+11. Now go to Deploy Option Heroku.
+12. Install heroku CLI and enter following commands one by one. 
     https://devcenter.heroku.com/articles/heroku-cli#download-and-install <-- Heroku CLI
 
     $ git checkout -b master
     $ heroku login
-9. Open command prompt or any terminal in your current directory where all files are located.
+13. Open command prompt or any terminal in your current directory where all files are located.
     $ git init
     $ heroku git:remote -a your-app-name
     $ git add .
     $ git commit -am "make it better"
     $ git push heroku master
 
-10. Then go to resource option and turn on the bot.
+14. Then go to resource option and turn on the bot.
 
 ```
 
