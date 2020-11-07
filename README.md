@@ -102,7 +102,8 @@ If you havent created account on heroku create one.
     TZ                        Asia/Kolkata
 
 7. Now go to Deploy Option Heroku.
-8. Install heroku CLI and enter following commands one by one.
+8. Install heroku CLI and enter following commands one by one. 
+    [CLICK HERE TO DOWNLOAD HEROKU CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
     $ git checkout -b master
     $ heroku login
 9. Open command prompt or any terminal in your current directory where all files are located.
