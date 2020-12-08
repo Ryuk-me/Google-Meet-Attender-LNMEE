@@ -3,8 +3,8 @@
 > This BOT will attend your online google meet classes on your behalf.(specific for `LNMEE`)
 ---
 
-### Chromedriver v86 has been used here 
-If your chrome version is not 86
+### Chromedriver v87 has been used here 
+If your chrome version is not 87
 Then download it from here `https://chromedriver.chromium.org/downloads` according to your chrome version.
 Delete `chromedriver.exe` before pushing it to heroku. (!important)
 
