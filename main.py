@@ -164,9 +164,10 @@ def meet_redirect():
             "//span[contains(text(),'Ask to join')]").click()
         sleep(180)  # !change it to 3-5 minutes e.g 300-360 sec
     except NoSuchElementException:
-        driver.find_element_by_xpath(
-            "//span[contains(text(),'Join now')]").click()
-        sleep(180)  # !change it to 3-5 minutes e.g 300-360 sec
+        if(check_exists_by_xpath("//span[contains(text(),'Join now')]") == True):
+            driver.find_element_by_xpath(
+                "//span[contains(text(),'Join now')]").click()
+            sleep(180)  # !change it to 3-5 minutes e.g 300-360 sec
     try:
         if(check_exists_by_xpath("//span[contains(text(),'Join now')]") == True):
             # print("available")
@@ -239,6 +240,7 @@ if __name__ == "__main__":
             while(check_exists_by_css("[aria-label='Chat with everyone']") != True):
                 meet_redirect()
             send_roll() #! it will click on chat btn
+            print("You Have Joined class at " + datetime.now().time().strftime("%H:%M:%S"))
             driver.execute_script("document.body.style.zoom='80%'")
             for i in range(1000):
                 if(datetime.now().strftime("%H:%M:%S") < '09:55:00'): #! Dont change it if we are same (u know what i mean) otherwise you can change it accordingly
@@ -297,6 +299,7 @@ if __name__ == "__main__":
             while(check_exists_by_css("[aria-label='Chat with everyone']") != True):
                 meet_redirect()
             send_roll()
+            print("You Have Joined class at " + datetime.now().time().strftime("%H:%M:%S"))
             driver.execute_script("document.body.style.zoom='80%'")
             for _ in range(100):
                 if(datetime.now().strftime("%H:%M:%S") < '09:55:00'):
