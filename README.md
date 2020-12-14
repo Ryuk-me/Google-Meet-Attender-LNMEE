@@ -2,7 +2,7 @@
 
 > This BOT will attend your online google meet classes on your behalf.(specific for `LNMEE`)
 
-### NEW CLASS TIME WILL BE ADDED BY TOMORROW MORNING (i.e 15-12-2020)
+### NEW CLASS TIME ADDED
 ---
 
 ### Chromedriver v87 has been used here 
