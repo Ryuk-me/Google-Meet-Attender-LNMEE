@@ -52,13 +52,13 @@ abc-defg-hij <-- it is your meeting code.
 ```sh
 1. Download any code editor i prefer vscode.
 2. Open main.py with vscode or any other editor or you can use notepad.
-3. Go to line 69 and replace meet code with your meet code and save.
+3. replace meet code with your meet code and save.
 ```
 ---
 ### How to set my name and roll to send it to chat.
 
 ```bash
-Go to line 75
+
 full_name_with_roll = "Arnab Swami 196175"
 now repalce `Arnab Swami 196175` with your name and roll.
 ```
@@ -139,8 +139,8 @@ Turn off BOT after class is completed / when you are awake.(to save heroku dyno 
 
 Turn on BOT Before Sleeping so it can attend your class while your are asleep.
 
-If you have turned off BOT after class is completed then only turn it on after 12PM.
-(If you turn on it before 12PM it will again start your meeting so be careful.) 
+If you have turned off BOT after class is completed then only turn it on after 3PM.
+(If you turn on it before 3PM it will again start your meeting so be careful.) 
 ```
 ---
 
