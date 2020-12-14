@@ -37,7 +37,8 @@ now = datetime.now()
 current_hour = int(now.strftime("%H"))
 
 
-if current_hour >= 12 and current_hour < 24:
+# if current_hour >= 12 and current_hour < 24: #! OLD CONDITION FOR SLEEP
+if current_hour >= 14 and current_hour < 24: #! NEW CONDITION FOR SLEEP
     time_sleep = 28 - current_hour
     print(f"Sleeping for {time_sleep} hours.")
     sleep(time_sleep*3600)
@@ -45,17 +46,21 @@ if current_hour >= 12 and current_hour < 24:
 
 # ! Change  to your meeting start time format must be same.
 now = datetime.now()
-startTime = f'{now.year} {now.month} {now.day} 09 11 00'
+# startTime = f'{now.year} {now.month} {now.day} 09 11 00'  #! OLD START TIME
+startTime = f'{now.year} {now.month} {now.day} 10 20 00'   #! NEW START TIME same for all days
 
 #! Chnage it to meeting end time format must be same.
-endTime = f'{now.year} {now.month} {now.day} 10 00 00'
+# endTime = f'{now.year} {now.month} {now.day} 10 00 00' #! OLD END TIME
+endTime = f'{now.year} {now.month} {now.day} 13 00 00' #! NEW END TIME
 
 #! Dont change it
 day_name = now.strftime("%A")
 
 
-#! If your saturday timing is different or same  then change it here format must be same.
-saturday_startTime = f'{now.year} {now.month} {now.day} 07 31 00'
+#!// If your saturday timing is different or same  then change it here format must be same.
+# saturday_startTime = f'{now.year} {now.month} {now.day} 07 31 00' #! NOW STAURDAY AND FRIDAY STARTTIME IS SAME TO OTHER DAYS
+#! CLASS ENDTIME OF SATURDAY AND FRIDAY ARE SAME 
+saturday_friday_endtime = f'{now.year} {now.month} {now.day} 12 00 00'
 
 #! Dont change it is just a precaution for heroku deployment.
 extended_pause = f'{now.year} {now.month} {now.day} 23 59 59'
@@ -72,7 +77,7 @@ meetingcode = 'abc-defg-hij'  # ! Replace with your meeting code
 #? abc-defg-hij will be your meeting code
 
 #! Chat message
-full_name_with_roll = "Arnab Swami 196175" #! Repalce With Your name and roll or anything you want
+full_name_with_roll = "Faizal Khan 18921" #! Repalce With Your name and roll or anything you want
 #? This message will be sent to chat.
 
 
@@ -188,6 +193,10 @@ def end_meet():
     end_call_btn = wait.until(when.element_to_be_clickable(
         (by.CSS_SELECTOR, "[aria-label='Leave call']")))  # ! It will End the call
     end_call_btn.click()
+    
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    print(f"You have left Metting at : [{current_time}]")
 
 
 def send_roll():
@@ -224,7 +233,7 @@ def check_exists_by_xpath(xpath):
 
 
 if __name__ == "__main__":
-    if(day_name != 'Saturday' and day_name != 'Sunday'):
+    if(day_name != 'Saturday' and day_name != 'Sunday' and day_name != 'Friday'):
         driver = browser()
         wait = webdriver.support.ui.WebDriverWait(driver, 5)
         driver.execute_script("document.body.style.zoom='50%'")
@@ -242,10 +251,11 @@ if __name__ == "__main__":
             send_roll() #! it will click on chat btn
             print("You Have Joined class at " + datetime.now().time().strftime("%H:%M:%S"))
             driver.execute_script("document.body.style.zoom='80%'")
-            for i in range(1000):
-                if(datetime.now().strftime("%H:%M:%S") < '09:55:00'): #! Dont change it if we are same (u know what i mean) otherwise you can change it accordingly
-                    send_roll_direct() #! it will send message to chat.
-                    sleep(180)
+            for _ in range(1000):
+                if(datetime.now().strftime("%H:%M:%S") < '12:43:00'):
+                    send_roll_direct()  # ! it will send message to chat.
+                    seconds_interval = random.choice([8,9,11,13])
+                    sleep(seconds_interval*60)
                 else:
                     break
             print(
@@ -253,7 +263,7 @@ if __name__ == "__main__":
             driver.execute_script("document.body.style.zoom='0%'")
             sleep(5)
             # ! Dont change it if we are same (u know what i mean) otherwise you can change it accordingly
-            if(datetime.now().strftime("%H:%M:%S") >= '10:01:00'):
+            if(datetime.now().strftime("%H:%M:%S") >= '13:01:00'):
                 # print("Exiting")
                 try:
                     end_meet() #! it will end meet
@@ -283,16 +293,16 @@ if __name__ == "__main__":
 
     #! Saturday case
     #! Same as if block only thing is cahnged is startTime
-    elif(day_name == 'Saturday'):
+    elif(day_name == 'Saturday' or day_name == "Friday"):
         driver = browser()
         wait = webdriver.support.ui.WebDriverWait(driver, 5)
         driver.execute_script("document.body.style.zoom='50%'")
-        saturday_startTime = list(map(int, saturday_startTime.split()))
-        endTime = list(map(int, endTime.split()))
+        startTime = list(map(int, startTime.split()))
+        saturday_friday_endtime = list(map(int, saturday_friday_endtime.split()))
         extended_pause = list(map(int, extended_pause.split()))
         print(
-            f"Waiting until Meet start time [{saturday_startTime[-3]:02}:{saturday_startTime[-2]:02}:{saturday_startTime[-1]:02}]...")
-        pause.until(datetime(*saturday_startTime))
+            f"Waiting until Meet start time [{startTime[-3]:02}:{startTime[-2]:02}:{startTime[-1]:02}]...")
+        pause.until(datetime(*startTime))
         login()
         try:
             meet_redirect()
@@ -301,16 +311,17 @@ if __name__ == "__main__":
             send_roll()
             print("You Have Joined class at " + datetime.now().time().strftime("%H:%M:%S"))
             driver.execute_script("document.body.style.zoom='80%'")
-            for _ in range(100):
-                if(datetime.now().strftime("%H:%M:%S") < '09:55:00'):
-                    send_roll_direct()
-                    sleep(180)
+            for _ in range(1000):
+                if(datetime.now().strftime("%H:%M:%S") < '11:43:00'):
+                    send_roll_direct()  # ! it will send message to chat.
+                    seconds_interval = random.choice([8,9,11,13])
+                    sleep(seconds_interval*60)
                 else:
                     break
             print(
-                f"Waiting until meet End time [{endTime[-3]:02}:{endTime[-2]:02}:{endTime[-1]:02}]...")
+                f"Waiting until meet End time [{saturday_friday_endtime[-3]:02}:{saturday_friday_endtime[-2]:02}:{saturday_friday_endtime[-1]:02}]...")
             driver.execute_script("document.body.style.zoom='0%'")
-            if(datetime.now().strftime("%H:%M:%S") >= '10:01:00'):
+            if(datetime.now().strftime("%H:%M:%S") >= '12:01:00'):
                 # print("Exiting......")
                 try:
                     end_meet()
@@ -321,7 +332,7 @@ if __name__ == "__main__":
                     driver.quit()
                     #sys.exit()
             else:
-                pause.until(datetime(*endTime))
+                pause.until(datetime(*saturday_friday_endtime))
             try:
                 end_meet()
                 driver.close()
