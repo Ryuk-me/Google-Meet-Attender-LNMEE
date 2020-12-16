@@ -77,7 +77,7 @@ meetingcode = 'abc-defg-hij'  # ! Replace with your meeting code
 #? abc-defg-hij will be your meeting code
 
 #! Chat message
-full_name_with_roll = "Faizal Khan 18921" #! Repalce With Your name and roll or anything you want
+full_name_with_roll = "Johnny Silverhand 98231" #! Repalce With Your name and roll or anything you want
 #? This message will be sent to chat.
 
 
