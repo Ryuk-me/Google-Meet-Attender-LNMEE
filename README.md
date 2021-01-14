@@ -153,6 +153,8 @@ if you are not from this batccch then do some changes in python file it should w
 
 Turn Off two step verification if enabled in your gmail account.
 
+Turn on Less secure apps.
+
 Dont use your primary gmail account.
 
 First run get_cookie.py and get your gmail account cookies. ( NECESSARY i repeat it is NECESSARY )
