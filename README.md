@@ -1,5 +1,6 @@
 # Google-Meet-Attender-LNMEE
 
+### Google fixed Cookie Login
 > This BOT will attend your online google meet classes on your behalf.(specific for `LNMEE`)
 
 ### NEW CLASS TIME ADDED
